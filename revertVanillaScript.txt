@@ -1,42 +1,63 @@
-## return runes in any place
+;## return runes in any place
 param ActionButtonParam: id 1000: radius: = vanilla;
 param ActionButtonParam: id 1000: height: = vanilla;
 param ActionButtonParam: id 1000: baseHeightOffset: = vanilla;
 
+#reduce enemy attack damage
+param AtkParam_Npc: modified: atkPhys: = vanilla;
+param AtkParam_Npc: modified: atkMag: = vanilla;
+param AtkParam_Npc: modified: atkFire: = vanilla;
+param AtkParam_Npc: modified: atkThun: = vanilla;
+param AtkParam_Npc: modified: atkDark: = vanilla;
+param AtkParam_Npc: modified: atkStam: = vanilla;
+param AtkParam_Npc: modified: atkSuperArmor: = vanilla;
+
+## Increase weapon Scaling
+param EquipParamWeapon: idrange 1000 99999999: correctStrength: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctMagic: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
+
 ##disable NG+ enemy scaling
-param ClearCountCorrectParam: idrange 0 7: MaxHpRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MaxMpRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MaxStaminaRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: SlashAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: ThrustAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: BlowAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: NeturalAttackRate: = vanilla;
+param ClearCountCorrectParam: idrange 0 7: MaxHpRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: MaxMpRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: MaxStaminaRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: SlashAttackRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: ThrustAttackRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: BlowAttackRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: NeturalAttackRate: = 0;
 
-param ClearCountCorrectParam: idrange 0 7: PoisionResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: DiseaseResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: BloodResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: CurseResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: FreezeResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: BloodDamageRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: SuperArmorDamageRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: FreezeDamageRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: SleepResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MadnessResistRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: SleepDamageRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MadnessDamageRate: = vanilla;
+param ClearCountCorrectParam: idrange 0 7: PoisionResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: DiseaseResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: BloodResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: CurseResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: FreezeResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: BloodDamageRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: SuperArmorDamageRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: FreezeDamageRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: SleepResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: MadnessResistRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: SleepDamageRate: = 0;
+param ClearCountCorrectParam: idrange 0 7: MadnessDamageRate: = 0;
 
-##receive damage -50% attack damage +20%
-param ClearCountCorrectParam: idrange 0 7: PhysicsAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MagicAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: FireAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: ThunderAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: DarkAttackRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: PhysicsDefenseRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: MagicDefenseRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: FireDefenseRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: ThunderDefenseRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: DarkDefenseRate: = vanilla;
-param ClearCountCorrectParam: idrange 0 7: StaminaAttackRate: = vanilla;
+##2x hit radious
+param AtkParam_Pc: modified: hit0_Radius: = vanilla;
+param AtkParam_Pc: modified: hit1_Radius: = vanilla;
+param AtkParam_Pc: modified: hit2_Radius: = vanilla;
+param AtkParam_Pc: modified: hit3_Radius: = vanilla;
+param AtkParam_Pc: modified: hit4_Radius: = vanilla;
+param AtkParam_Pc: modified: hit5_Radius: = vanilla;
+param AtkParam_Pc: modified: hit6_Radius: = vanilla;
+param AtkParam_Pc: modified: hit7_Radius: = vanilla;
+param AtkParam_Pc: modified: hit8_Radius: = vanilla;
+param AtkParam_Pc: modified: hit9_Radius: = vanilla;
+param AtkParam_Pc: modified: hit10_Radius: = vanilla;
+param AtkParam_Pc: modified: hit11_Radius: = vanilla;
+param AtkParam_Pc: modified: hit12_Radius: = vanilla;
+param AtkParam_Pc: modified: hit13_Radius: = vanilla;
+param AtkParam_Pc: modified: hit14_Radius: = vanilla;
+param AtkParam_Pc: modified: hit15_Radius: = vanilla;
 
 ##2x hit radious
 param AtkParam_Pc: idrange 0 999999999: hit0_Radius: = vanilla;

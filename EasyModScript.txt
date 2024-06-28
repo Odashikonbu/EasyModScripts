@@ -3,59 +3,39 @@ param ActionButtonParam: id 1000: radius: = 1000000.000;
 param ActionButtonParam: id 1000: height: = 1000000.000;
 param ActionButtonParam: id 1000: baseHeightOffset: = -700000.000;
 
-##disable NG+ enemy scaling
-param ClearCountCorrectParam: idrange 0 7: MaxHpRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: MaxMpRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: MaxStaminaRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: SlashAttackRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: ThrustAttackRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: BlowAttackRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: NeturalAttackRate: = 0;
+##reduce enemy attack damage
+param AtkParam_Npc: !modified: atkPhys: * 0.5;
+param AtkParam_Npc: !modified: atkMag: * 0.5;
+param AtkParam_Npc: !modified: atkFire: * 0.5;
+param AtkParam_Npc: !modified: atkThun: * 0.5;
+param AtkParam_Npc: !modified: atkDark: * 0.5;
+param AtkParam_Npc: !modified: atkStam: * 0.5;
+param AtkParam_Npc: !modified: atkSuperArmor: * 0.75;
 
-param ClearCountCorrectParam: idrange 0 7: PoisionResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: DiseaseResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: BloodResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: CurseResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: FreezeResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: BloodDamageRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: SuperArmorDamageRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: FreezeDamageRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: SleepResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: MadnessResistRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: SleepDamageRate: = 0;
-param ClearCountCorrectParam: idrange 0 7: MadnessDamageRate: = 0;
+##2x hit radious + 20%+ damage
+param AtkParam_Pc: !modified: hit0_Radius: * 2;
+param AtkParam_Pc: !modified: hit1_Radius: * 2;
+param AtkParam_Pc: !modified: hit2_Radius: * 2;
+param AtkParam_Pc: !modified: hit3_Radius: * 2;
+param AtkParam_Pc: !modified: hit4_Radius: * 2;
+param AtkParam_Pc: !modified: hit5_Radius: * 2;
+param AtkParam_Pc: !modified: hit6_Radius: * 2;
+param AtkParam_Pc: !modified: hit7_Radius: * 2;
+param AtkParam_Pc: !modified: hit8_Radius: * 2;
+param AtkParam_Pc: !modified: hit9_Radius: * 2;
+param AtkParam_Pc: !modified: hit10_Radius: * 2;
+param AtkParam_Pc: !modified: hit11_Radius: * 2;
+param AtkParam_Pc: !modified: hit12_Radius: * 2;
+param AtkParam_Pc: !modified: hit13_Radius: * 2;
+param AtkParam_Pc: !modified: hit14_Radius: * 2;
+param AtkParam_Pc: !modified: hit15_Radius: * 2;
 
-##receive damage -50% attack damage +20%
-param ClearCountCorrectParam: idrange 0 7: PhysicsAttackRate: = 0.5;
-param ClearCountCorrectParam: idrange 0 7: MagicAttackRate: = 0.5;
-param ClearCountCorrectParam: idrange 0 7: FireAttackRate: = 0.5;
-param ClearCountCorrectParam: idrange 0 7: ThunderAttackRate: = 0.5;
-param ClearCountCorrectParam: idrange 0 7: DarkAttackRate: = 0.5;
-param ClearCountCorrectParam: idrange 0 7: PhysicsDefenseRate: = 0.8;
-param ClearCountCorrectParam: idrange 0 7: MagicDefenseRate: = 0.8;
-param ClearCountCorrectParam: idrange 0 7: FireDefenseRate: = 0.8;
-param ClearCountCorrectParam: idrange 0 7: ThunderDefenseRate: = 0.8;
-param ClearCountCorrectParam: idrange 0 7: DarkDefenseRate: = 0.8;
-param ClearCountCorrectParam: idrange 0 7: StaminaAttackRate: = 0.5;
-
-##2x hit radious
-param AtkParam_Pc: idrange 0 999999999: hit0_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit1_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit2_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit3_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit4_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit5_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit6_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit7_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit8_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit9_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit10_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit11_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit12_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit13_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit14_Radius: * 2;
-param AtkParam_Pc: idrange 0 999999999: hit15_Radius: * 2;
-
+## Increase Weapon Scaling
+param EquipParamWeapon: idrange 1000 99999999: correctStrength: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctMagic: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
 
 ##Flask heal 2x
 param SpEffectParam: idrange 501000 501012: changeHpEstusFlaskPoint: * 2;

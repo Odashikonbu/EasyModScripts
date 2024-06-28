@@ -7,13 +7,6 @@ param EquipParamProtector: idrange 1000 9999999: weight: = 0;
 ## no Weight Weapon
 param EquipParamWeapon: idrange 1000 99999999: weight: = 0;
 
-## Increase Item Scaling
-param EquipParamWeapon: idrange 1000 99999999: correctStrength: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctAgility: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctMagic: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
-
 ## no Summon FP cost 
 param EquipParamGoods: idrange 0 9999999: consumeMP: = 0;
 

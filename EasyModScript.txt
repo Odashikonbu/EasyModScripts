@@ -222,3 +222,14 @@ param SpEffectParam: idrange 20007400 20007750: registBloodChangeRate: = 1;
 param SpEffectParam: idrange 20007400 20007750: registFreezeChangeRate: = 1;
 param SpEffectParam: idrange 20007400 20007750: registSleepChangeRate: = 1;
 param SpEffectParam: idrange 20007400 20007750: registMadnessChangeRate: = 1;
+
+##nerf MaleniA
+param SpEffectParam: idrange 18400 18405: Name: = Malenia: HP Recovery on ?;
+param SpEffectParam: idrange 18400 18405: changeHpRate: = 0;
+param SpEffectParam: idrange 18410 18416: Name: = Malenia: HP Recovery on Hit;
+param SpEffectParam: idrange 18410 18416: changeHpRate: = 0;
+param SpEffectParam: id 18417: Name: = Malenia: HP Recovery on Grab;
+param SpEffectParam: id 18417: changeHpRate: = 0;
+param SpEffectParam: idrange 18418 18419: Name: = Malenia: HP Recovery on Hit;
+param SpEffectParam: idrange 18418 18419: changeHpRate: = 0;
+

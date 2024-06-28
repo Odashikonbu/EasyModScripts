@@ -1,0 +1,59 @@
+## no Weight Accessory
+param EquipParamAccessory: idrange 1000 999999999: weight: = 0;
+
+## no Weight Armor
+param EquipParamProtector: idrange 1000 9999999: weight: = 0;
+
+## no Weight Weapon
+param EquipParamWeapon: idrange 1000 99999999: weight: = 0;
+
+## Increase Item Scaling
+param EquipParamWeapon: idrange 1000 99999999: correctStrength: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctMagic: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
+
+## no Summon FP cost 
+param EquipParamGoods: idrange 0 9999999: consumeMP: = 0;
+
+## no Spell FP cost 
+param Magic: idrange 4000 999999999: mp: = 0;
+param Magic: idrange 4000 999999999: mp_charge: = 0;
+
+## no SwordArts cost
+param SwordArtsParam: idrange 10 9992: useMagicPoint_L1: = -1;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_L2: = -1;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_R1: = -1;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_R2: = -1;
+
+## Diserse fast heal
+param PlayerCommonParam: id 0: resistRecoverPoint_Sleep_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Poision_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Desease_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Blood_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Curse_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Freeze_Player: = 2000;
+param PlayerCommonParam: id 0: resistRecoverPoint_Madness_Player: = 2000;
+
+## Item Discovery 500
+param CalcCorrectGraph: id 140: stageMaxVal1: = 1;
+param CalcCorrectGraph: id 140: stageMaxVal2: = 2;
+param CalcCorrectGraph: id 140: stageMaxVal3: = 3;
+param CalcCorrectGraph: id 140: stageMaxVal4: = 4;
+param CalcCorrectGraph: id 140: stageMaxGrowVal0: = 5;
+param CalcCorrectGraph: id 140: stageMaxGrowVal1: = 5;
+param CalcCorrectGraph: id 140: stageMaxGrowVal2: = 5;
+param CalcCorrectGraph: id 140: stageMaxGrowVal3: = 5;
+param CalcCorrectGraph: id 140: stageMaxGrowVal4: = 5;
+
+## stating skill + 10
+param CharaInitParam: idrange 3000 3009: baseVit: + 10;
+param CharaInitParam: idrange 3000 3009: baseWil: + 10;
+param CharaInitParam: idrange 3000 3009: baseEnd: + 10;
+param CharaInitParam: idrange 3000 3009: baseStr: + 10;
+param CharaInitParam: idrange 3000 3009: baseDex: + 10;
+param CharaInitParam: idrange 3000 3009: baseMag: + 10;
+param CharaInitParam: idrange 3000 3009: baseFai: + 10;
+param CharaInitParam: idrange 3000 3009: baseLuc: + 10;
+

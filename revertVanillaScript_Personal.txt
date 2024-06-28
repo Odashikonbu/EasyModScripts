@@ -1,0 +1,58 @@
+## no Weight Accessory
+param EquipParamAccessory: idrange 1000 999999999: weight: = vanilla;
+
+## no Weight Armor
+param EquipParamProtector: idrange 1000 9999999: weight: = vanilla;
+
+## no Weight Weapon
+param EquipParamWeapon: idrange 1000 99999999: weight: = vanilla;
+
+## Increase Item Scaling
+param EquipParamWeapon: idrange 1000 99999999: correctStrength: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctMagic: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
+
+## no Summon FP cost 
+param EquipParamGoods: idrange 0 9999999: consumeMP: = vanilla;
+
+## no Spell FP cost 
+param Magic: idrange 4000 999999999: mp: = vanilla;
+param Magic: idrange 4000 999999999: mp_charge: = vanilla;
+
+## no SwordArts cost
+param SwordArtsParam: idrange 10 9992: useMagicPoint_L1: = vanilla;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_L2: = vanilla;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_R1: = vanilla;
+param SwordArtsParam: idrange 10 9992: useMagicPoint_R2: = vanilla;
+
+## Diserse fast heal
+param PlayerCommonParam: id 0: resistRecoverPoint_Sleep_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Poision_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Desease_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Blood_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Curse_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Freeze_Player: = vanilla;
+param PlayerCommonParam: id 0: resistRecoverPoint_Madness_Player: = vanilla;
+
+## Item Discovery 500
+param CalcCorrectGraph: id 140: stageMaxVal1: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxVal2: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxVal3: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxVal4: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxGrowVal0: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxGrowVal1: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxGrowVal2: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxGrowVal3: = vanilla;
+param CalcCorrectGraph: id 140: stageMaxGrowVal4: = vanilla;
+
+## stating skill + 10
+param CharaInitParam: idrange 3000 3009: baseVit: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseWil: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseEnd: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseStr: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseDex: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseMag: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseFai: = vanilla;
+param CharaInitParam: idrange 3000 3009: baseLuc: = vanilla;

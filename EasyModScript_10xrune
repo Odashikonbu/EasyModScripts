@@ -1,0 +1,25 @@
+## 10x rune(mob enemy)
+param NpcParam: idrange 0 599999999: getSoul: * 10;
+
+##10x rune(Boss)
+param GameAreaParam: idrange 0 2054390850: bonusSoul_single: * 10;
+param GameAreaParam: idrange 0 2054390850: bonusSoul_multi: * 10;
+
+## Reinforcement weapon cost to 1(and no needs Dragon Smithing Stone)
+param EquipMtrlSetParam: idrange 0 1510: itemNum01: = 1;
+param EquipMtrlSetParam: id 25: materialId01: = 10107;
+param EquipMtrlSetParam: id 125: materialId01: = 10107;
+param EquipMtrlSetParam: id 225: materialId01: = 10107;
+param EquipMtrlSetParam: id 325: materialId01: = 10107;
+param EquipMtrlSetParam: id 425: materialId01: = 10107;
+param EquipMtrlSetParam: id 525: materialId01: = 10107;
+param EquipMtrlSetParam: id 625: materialId01: = 10107;
+param EquipMtrlSetParam: id 725: materialId01: = 10107;
+param EquipMtrlSetParam: id 825: materialId01: = 10107;
+param EquipMtrlSetParam: id 925: materialId01: = 10107;
+param EquipMtrlSetParam: id 1025: materialId01: = 10107;
+param EquipMtrlSetParam: id 1110: materialId01: = 10107;
+param EquipMtrlSetParam: id 1210: materialId01: = 10107;
+param EquipMtrlSetParam: id 1310: materialId01: = 10107;
+param EquipMtrlSetParam: id 1410: materialId01: = 10107;
+param EquipMtrlSetParam: id 1510: materialId01: = 10107;

@@ -10,7 +10,7 @@ param AtkParam_Npc: !modified: atkFire: * 0.5;
 param AtkParam_Npc: !modified: atkThun: * 0.5;
 param AtkParam_Npc: !modified: atkDark: * 0.5;
 param AtkParam_Npc: !modified: atkStam: * 0.5;
-param AtkParam_Npc: !modified: atkSuperArmor: * 0.75;
+param AtkParam_Npc: !modified: atkSuperArmor: * 0.8;
 
 ##2x hit radious + 20%+ damage
 param AtkParam_Pc: !modified: hit0_Radius: * 2;
@@ -31,11 +31,11 @@ param AtkParam_Pc: !modified: hit14_Radius: * 2;
 param AtkParam_Pc: !modified: hit15_Radius: * 2;
 
 ## Increase Weapon Scaling
-param EquipParamWeapon: idrange 1000 99999999: correctStrength: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctAgility: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctMagic: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
-param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.5;
+param EquipParamWeapon: idrange 1000 99999999: correctStrength: * 1.2;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility: * 1.2;
+param EquipParamWeapon: idrange 1000 99999999: correctMagic: * 1.2;
+param EquipParamWeapon: idrange 1000 99999999: correctFaith: * 1.2;
+param EquipParamWeapon: idrange 1000 99999999: correctLuck: * 1.2;
 
 ##Flask heal 2x
 param SpEffectParam: idrange 501000 501012: changeHpEstusFlaskPoint: * 2;

@@ -14,10 +14,10 @@ param AtkParam_Npc: modified: atkSuperArmor: = vanilla;
 
 ## Increase weapon Scaling
 param EquipParamWeapon: idrange 1000 99999999: correctStrength: = vanilla;
-param EquipParamWeapon: idrange 1000 99999999: correctAgility: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctAgility:  = vanilla;
 param EquipParamWeapon: idrange 1000 99999999: correctMagic: = vanilla;
 param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
-param EquipParamWeapon: idrange 1000 99999999: correctFaith: = vanilla;
+param EquipParamWeapon: idrange 1000 99999999: correctLuck: = vanilla;
 
 ##disable NG+ enemy scaling
 param ClearCountCorrectParam: idrange 0 7: MaxHpRate: = 0;

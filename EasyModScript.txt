@@ -212,4 +212,6 @@ param SpEffectParam: id 18417: Name: = Malenia: HP Recovery on Grab;
 param SpEffectParam: id 18417: changeHpRate: = 0;
 param SpEffectParam: idrange 18418 18419: Name: = Malenia: HP Recovery on Hit;
 param SpEffectParam: idrange 18418 18419: changeHpRate: = 0;
+param SpEffectParam: id 18404: Name: = Malenia: HP Recovery on Phase Change;
+param SpEffectParam: id 18404: changeHpRate: = vanilla;
 
